@@ -14,22 +14,23 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @Data
-public class Comment implements Serializable {/**
-	 * 
-	 */
+public class Comment implements Serializable {
+	/**
+	* 
+	*/
 	private static final long serialVersionUID = 1L;
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long comment_id;
 	private String comment_text;
 	private float rate;
 	private Date comment_date;
+
 	public Comment(String full_name, float rate) {
 		super();
 		this.comment_text = full_name;
 		this.rate = rate;
-		this.comment_date= new Date();
+		this.comment_date = new Date();
 	}
-	
-	
 
 }
