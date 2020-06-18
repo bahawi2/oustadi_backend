@@ -1042,3 +1042,7 @@ ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback
 18-06-2020 17:48:17.176 [http-nio-8080-exec-2] INFO  c.o.controllers.LoginController.getlogs - doStuff took input -  task number1
 18-06-2020 17:48:17.176 [http-nio-8080-exec-2] WARN  c.o.controllers.LoginController.getlogs - doStuff needed to warn -  task number1
 18-06-2020 17:48:17.176 [http-nio-8080-exec-2] ERROR c.o.controllers.LoginController.getlogs - doStuff encountered an error with value -  task number1
+18-06-2020 18:28:34.883 [Thread-75] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+18-06-2020 18:28:34.884 [Thread-75] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+18-06-2020 18:28:34.887 [Thread-75] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-10 - Shutdown initiated...
+18-06-2020 18:28:34.897 [Thread-75] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-10 - Shutdown completed.

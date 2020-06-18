@@ -6,7 +6,11 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
+<<<<<<< HEAD
+		<version>2.1.15.RELEASE</version>
+=======
 		<version>2.2.6.RELEASE</version>
+>>>>>>> a2ceb099df92ac3277f8679e392725808111d208
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.oustadi</groupId>
@@ -74,6 +78,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>oustadi-app</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

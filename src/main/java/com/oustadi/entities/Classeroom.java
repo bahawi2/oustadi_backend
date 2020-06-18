@@ -35,7 +35,7 @@ public class Classeroom implements Serializable {
 	
 	@ManyToOne(cascade = { CascadeType.REFRESH, CascadeType.MERGE, CascadeType.PERSIST })
 	@JoinColumn(name = "student_id")
-	private Stuent student = new Stuent();
+	private Student student = new Student();
 	
 	@ManyToOne(cascade = { CascadeType.REFRESH, CascadeType.MERGE, CascadeType.PERSIST })
 	@JoinColumn(name = "professort_id")

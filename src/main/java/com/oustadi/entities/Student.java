@@ -1,6 +1,7 @@
 package com.oustadi.entities;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.CascadeType;
@@ -17,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
-public class Stuent extends User_App implements Serializable {
+public class Student extends User_App implements Serializable {
 
 	/**
 	 * 
@@ -30,8 +31,8 @@ public class Stuent extends User_App implements Serializable {
 	@JoinColumn(name = "level_id")
 	private Level student_level;
 
-	public Stuent(String full_name, Date birth_day, String username, String password, Level student_level) {
-		super(full_name, birth_day, username, password);
+	public Student(String full_name, LocalDate birthday, String username, String password, Level student_level) {
+		super(full_name, birthday, username, password);
 		this.student_level = student_level;
 	}
 	
