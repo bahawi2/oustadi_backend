@@ -1,6 +1,7 @@
 package com.oustadi.entities;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -23,7 +24,7 @@ public class Professor extends User_App implements Serializable {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long proffesor_id;
 	
-	public Professor(String full_name, Date birth_day, String username, String password) {
+	public Professor(String full_name, LocalDate birth_day, String username, String password) {
 		super(full_name, birth_day, username, password);
 	}
 	
