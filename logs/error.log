@@ -1,0 +1,9 @@
+18-06-2020 17:42:37.078 [restartedMain] INFO  com.oustadi.OustadiApplication.logStarting -       Starting OustadiApplication on DESKTOP-AG80A67 with PID 5112 (C:\Users\admin\Documents\Ecommerce\oustadi\target\classes started by admin in C:\Users\admin\Documents\Ecommerce\oustadi)
+18-06-2020 17:42:37.079 [restartedMain] DEBUG com.oustadi.OustadiApplication.logStarting -       Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+18-06-2020 17:42:37.080 [restartedMain] INFO  com.oustadi.OustadiApplication.logStartupProfileInfo -       No active profile set, falling back to default profiles: default
+18-06-2020 17:42:38.931 [restartedMain] INFO  com.oustadi.OustadiApplication.logStarted -       Started OustadiApplication in 1.938 seconds (JVM running for 400.453)
+18-06-2020 17:42:44.506 [http-nio-8080-exec-1] TRACE c.o.controllers.LoginController.getlogs -       doStuff needed more information -  task number1
+18-06-2020 17:42:44.508 [http-nio-8080-exec-1] DEBUG c.o.controllers.LoginController.getlogs -       doStuff needed to debug -  task number1
+18-06-2020 17:42:44.509 [http-nio-8080-exec-1] INFO  c.o.controllers.LoginController.getlogs -       doStuff took input -  task number1
+18-06-2020 17:42:44.509 [http-nio-8080-exec-1] WARN  c.o.controllers.LoginController.getlogs -       doStuff needed to warn -  task number1
+18-06-2020 17:42:44.510 [http-nio-8080-exec-1] ERROR c.o.controllers.LoginController.getlogs -       doStuff encountered an error with value -  task number1
