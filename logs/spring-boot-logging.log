@@ -1528,3 +1528,25 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 19-06-2020 02:43:21.910 [Thread-50] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
 19-06-2020 02:43:21.913 [Thread-50] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-7 - Shutdown initiated...
 19-06-2020 02:43:21.919 [Thread-50] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-7 - Shutdown completed.
+19-06-2020 02:43:22.931 [restartedMain] INFO  com.oustadi.OustadiApplication.logStarting - Starting OustadiApplication on DESKTOP-AG80A67 with PID 3496 (C:\Users\admin\Documents\Ecommerce\oustadi\target\classes started by admin in C:\Users\admin\Documents\Ecommerce\oustadi)
+19-06-2020 02:43:22.932 [restartedMain] DEBUG com.oustadi.OustadiApplication.logStarting - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+19-06-2020 02:43:22.932 [restartedMain] INFO  com.oustadi.OustadiApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+19-06-2020 02:43:23.304 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19-06-2020 02:43:23.321 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 17ms. Found 1 JPA repository interfaces.
+19-06-2020 02:43:23.541 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 9090 (http)
+19-06-2020 02:43:23.541 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+19-06-2020 02:43:23.541 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+19-06-2020 02:43:23.553 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+19-06-2020 02:43:23.553 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 619 ms
+19-06-2020 02:43:23.684 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+19-06-2020 02:43:23.689 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-8 - Starting...
+19-06-2020 02:43:23.692 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-8 - Start completed.
+19-06-2020 02:43:23.692 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+19-06-2020 02:43:24.128 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19-06-2020 02:43:24.129 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19-06-2020 02:43:24.148 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+19-06-2020 02:43:24.375 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+19-06-2020 02:43:24.514 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+19-06-2020 02:43:24.546 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 9090 (http) with context path ''
+19-06-2020 02:43:24.547 [restartedMain] INFO  com.oustadi.OustadiApplication.logStarted - Started OustadiApplication in 1.646 seconds (JVM running for 6227.185)
+19-06-2020 02:43:24.550 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent - Condition evaluation unchanged
