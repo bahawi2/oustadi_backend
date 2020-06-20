@@ -27,5 +27,10 @@ public class StudentController {
 	public Optional<Student> getstudentBYID(@PathVariable("id") Long student_id) {
 		return studentService.getStudentById(student_id);
 	}
+	
+	@GetMapping ("/greeting")
+	public String greeting() {
+		return "hello from oustadi app";
+	}
 
 }
