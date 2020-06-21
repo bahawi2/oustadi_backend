@@ -21,11 +21,12 @@ public class Professor extends User_App implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long proffesor_id;
 	
-	public Professor(String full_name, LocalDate birth_day, String username, String password) {
-		super(full_name, birth_day, username, password);
+	private Double hour_price;
+	
+	
+	public Professor(String full_name, LocalDate birth_day, String username, String password,String email) {
+		super(full_name, birth_day, username, password,email);
 	}
 	
 	

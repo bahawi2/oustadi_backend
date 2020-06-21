@@ -1,6 +1,7 @@
 package com.oustadi.entities;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -28,10 +29,11 @@ public class Classeroom implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long classeroom_id;
-	private String classeroom_name;
-	private Date classerom_date;
+	private LocalDateTime start_time;
+	private LocalDateTime end_time;
 	private boolean started;
 	private boolean finished;
+	private float rate;
 	
 	@ManyToOne(cascade = { CascadeType.REFRESH, CascadeType.MERGE, CascadeType.PERSIST })
 	@JoinColumn(name = "student_id")
@@ -44,15 +46,7 @@ public class Classeroom implements Serializable {
 	@ManyToOne(cascade = { CascadeType.REFRESH, CascadeType.MERGE, CascadeType.PERSIST })
 	@JoinColumn(name = "subject_id")
 	private Subject subject = new Subject();
-	
-	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-	private List<Comment> comments = new ArrayList<Comment>();
 
-	public Classeroom(Date classerom_date) {
-		super();
-		this.classerom_date = classerom_date;
-	}
-	
 	
 	
 	

@@ -13,26 +13,28 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
+@JsonIgnoreProperties(value = "student_level")
 public class Student extends User_App implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long student_id;
+
 	
 	@ManyToOne(cascade = { CascadeType.REFRESH, CascadeType.MERGE, CascadeType.PERSIST })
 	@JoinColumn(name = "level_id")
 	private Level student_level;
 
-	public Student(String full_name, LocalDate birthday, String username, String password, Level student_level) {
-		super(full_name, birthday, username, password);
+	public Student(String full_name, LocalDate birthday, String username, String password,String email , Level student_level) {
+		super(full_name, birthday, username, password,email);
 		this.student_level = student_level;
 	}
 	
