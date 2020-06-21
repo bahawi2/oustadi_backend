@@ -16,7 +16,7 @@ import com.oustadi.services.StudentService;
 @Component
 public class InitDb implements CommandLineRunner {
 	@Autowired
-	StudentService syudent_service;
+	StudentService student_service;
 	@Autowired
 	ProfessorService professorService;
 
@@ -25,18 +25,49 @@ public class InitDb implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		syudent_service.save_studen(new Student("AIT BAHA ISMAIL", birthday, "bahaoui", "bahaoui1234",
+		student_service.save_studen(new Student("AIT BAHA ISMAIL", birthday, "bahaoui", "bahaoui1234",
 				"email@email.com", new Level("3 eme")));
-		syudent_service.save_studen(
+		student_service.save_studen(
 				new Student("TAHIRI NAJAT", birthday, "bahaoui", "bahaoui1234", "email@email.com", new Level("2 eme")));
-		syudent_service.save_studen(new Student("ESSAKI SAIDA ", birthday, "bahaoui", "bahaoui1234", "email@email.com",
+		student_service.save_studen(new Student("ESSAKI SAIDA ", birthday, "bahaoui", "bahaoui1234", "email@email.com",
 				new Level("4 eme")));
-		syudent_service.save_studen(
+		student_service.save_studen(
 				new Student("TIHANI OMAR", birthday, "bahaoui", "bahaoui1234", "email@email.com", new Level("1 eme")));
-		syudent_service.save_studen(new Student("ERRAKI NAJATL", birthday, "bahaoui", "bahaoui1234", "email@email.com",
+		student_service.save_studen(new Student("ERRAKI NAJATL", birthday, "bahaoui", "bahaoui1234", "email@email.com",
 				new Level("5 eme")));
 
 		professorService.save_Professor(new Professor("SAIDI NAWAL", birthday, "prof", "prof1234", "email@email.com"));
+		professorService.save_Professor(
+				new Professor("TANJAWI KELTOUM NAWAL", birthday, "prof", "prof1234", "email@email.com"));
+		professorService
+				.save_Professor(new Professor("ROUHANI YASSINEL", birthday, "prof", "prof1234", "email@email.com"));
+
+		professorService
+				.save_Professor(new Professor("TIJANI MOURAD", birthday, "prof", "prof1234", "email@email.com"));
+		professorService.save_Professor(new Professor("SAIDI NAWAL", birthday, "prof", "prof1234", "email@email.com"));
+		professorService.save_Professor(
+				new Professor("TANJAWI KELTOUM NAWAL", birthday, "prof", "prof1234", "email@email.com"));
+		professorService
+				.save_Professor(new Professor("ROUHANI YASSINEL", birthday, "prof", "prof1234", "email@email.com"));
+
+		professorService
+				.save_Professor(new Professor("TIJANI MOURAD", birthday, "prof", "prof1234", "email@email.com"));
+		professorService.save_Professor(new Professor("SAIDI NAWAL", birthday, "prof", "prof1234", "email@email.com"));
+		professorService.save_Professor(
+				new Professor("TANJAWI KELTOUM NAWAL", birthday, "prof", "prof1234", "email@email.com"));
+		professorService
+				.save_Professor(new Professor("ROUHANI YASSINEL", birthday, "prof", "prof1234", "email@email.com"));
+
+		professorService
+				.save_Professor(new Professor("TIJANI MOURAD", birthday, "prof", "prof1234", "email@email.com"));
+		professorService.save_Professor(new Professor("SAIDI NAWAL", birthday, "prof", "prof1234", "email@email.com"));
+		professorService.save_Professor(
+				new Professor("TANJAWI KELTOUM NAWAL", birthday, "prof", "prof1234", "email@email.com"));
+		professorService
+				.save_Professor(new Professor("ROUHANI YASSINEL", birthday, "prof", "prof1234", "email@email.com"));
+
+		professorService
+				.save_Professor(new Professor("TIJANI MOURAD", birthday, "prof", "prof1234", "email@email.com"));
 	}
 
 }

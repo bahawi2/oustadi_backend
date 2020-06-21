@@ -18,6 +18,8 @@ import javax.persistence.InheritanceType;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -47,7 +49,10 @@ public class User_App implements Serializable {
 	private String password;
 	@Column
 	private String email;
+	private String sexe;
+	private String photo;
 	
+	@JsonIgnore
 	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true,mappedBy = "user")
 	private List<Comment> comments = new ArrayList<Comment>();
 
