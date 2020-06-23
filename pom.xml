@@ -99,6 +99,7 @@
 					<repository>bahou/${project.name}</repository>
 					<tag>${project.version}</tag>
 					<skipDockerInfo>true</skipDockerInfo>
+					<password>Docker2019@@</password>
 				</configuration>
 			</plugin>
 

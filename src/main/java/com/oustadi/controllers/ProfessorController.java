@@ -17,7 +17,7 @@ import com.oustadi.services.ProfessorService;
 
 @RestController
 @RequestMapping("profesors")
-@CrossOrigin(origins = "http://localhost:4200/", maxAge = 3600)
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class ProfessorController {
 	
 	@Autowired
@@ -35,7 +35,7 @@ public class ProfessorController {
 	
 	@GetMapping("/page/{pageNo}")
 	public ProfessorDto getPageOfProfessor(@PathVariable("pageNo") int pageNo, Model model) {
-		Page<Professor> page = professorService.FindPaginated(pageNo, 2);
+		Page<Professor> page = professorService.FindPaginated(pageNo, 6);
 		List<Professor> listProfessors = page.getContent();
 		model.addAttribute("currentPage"  , pageNo);
 		model.addAttribute("totalPage"  , page.getTotalPages());
