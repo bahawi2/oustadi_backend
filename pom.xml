@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.oustadi</groupId>
 	<artifactId>oustadi</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>oustadi</name>
 	<description>wassali BackEnd App</description>
 
@@ -82,7 +82,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<!-- Docker -->
-			<!-- <plugin>
+			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-plugin</artifactId>
 				<version>1.4.6</version>
@@ -99,9 +99,8 @@
 					<repository>bahou/${project.name}</repository>
 					<tag>${project.version}</tag>
 					<skipDockerInfo>true</skipDockerInfo>
-					<password>Docker2019@@</password>
 				</configuration>
-			</plugin> -->
+			</plugin> 
 
 		</plugins>
 
