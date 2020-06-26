@@ -11,9 +11,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class ProfessorDto {
+	public ProfessorDto(List<Professor> listProfessors, Model model2) {
+		// TODO Auto-generated constructor stub
+	}
 	private List<Professor> listOfProfessors;
 	private Model model;
 
